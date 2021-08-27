@@ -12,12 +12,13 @@ bgcolor="lightblue"
     /*font-family: fantasy; /* En mi caso tengo esta font y la uso*/
 }
 
+/* Toda la pagina siempre debe tener fondo negro */
 body {
     background-color:black;
 }
 
 footer {
-    background-color:mediumorchid;
+    background-color:mediumorchid !important;
     color: white;
     font-family: 'Klee One', cursive;
 }
@@ -27,9 +28,11 @@ header {
     color: white;
 }
 
-/*a {
+a {
     color: white;
-}*/
+    /*background-color: black !important; Importante recordar que esto 
+    puede alterar elementos no deseados*/
+}
 
 #iniciar {
     color: white;
@@ -57,3 +60,11 @@ ul, h2 {
 .fa-cloud {
     color: red;
 }
+
+body > header > i.fas.fa-car {
+    scale: 120;
+}
+
+/***************************************************/
+/*   Estilo del componente boton - fondo blanco   */
+/***************************************************/
